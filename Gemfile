@@ -21,6 +21,7 @@ group :test do
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
   gem 'growl', '1.0.3'
+  gem 'minitest'
 end
 
 gem 'sass-rails', '~> 4.0.3'
