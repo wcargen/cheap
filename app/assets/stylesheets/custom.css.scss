@@ -1,3 +1,13 @@
+@import "bootstrap";
+
+/* mixins */
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -52,4 +62,42 @@ code {
 
 .welcome {
   text-align: center;
+}
+
+.profile {
+  text-align: center;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#registration {
+  display: inline-block;
+  text-align: left;
+  max-width: 1000px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#error_explanation {
+  color: white;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
 }
