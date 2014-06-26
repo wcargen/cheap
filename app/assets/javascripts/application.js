@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+// Navbar dropdown menu override
+$(document).ready(function(){
+        $('.dropdown-toggle').dropdown()
+    });
