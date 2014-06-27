@@ -15,6 +15,15 @@ class ItemsController < ApplicationController
       @result = JSON.parse(request.body)
   end
 
+  def info
+    @venueid = params[:venueid]
+
+    request = Typhoeus::Request.new(
+      "http://api.locu.com/v1_0/venue/#{@venueid}/?",
+      params: {api_key: Rails.application.secrets.locu_api_key}).run
+      @info = JSON.parse(request.body)
+  end
+
   def create
   end
 

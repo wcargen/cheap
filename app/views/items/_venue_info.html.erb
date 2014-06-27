@@ -1,0 +1,8 @@
+<% @info["objects"].each do |venue| %>
+  <h1><%= venue["name"] %></h1>
+  <p><%= venue["street_address"] %><br>
+     <%= venue["locality"] %>, <%= venue["region"] %>
+     <%= venue["postal_code"] %> </p>
+  <p><%= venue["phone"] %></p>
+  <p><a href="<%= venue["website_url"] %>"><%= venue["website_url"] %></a></p>
+<% end %>

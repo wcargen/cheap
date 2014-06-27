@@ -1,10 +1,6 @@
 <div class="container">
-  <h1>Results</h1>
-
-  <% @result["objects"].each do |item| %>
-    <p>
-      <%= item["name"] %> for $<%= item["price"] %> at
-      <%= item["venue"]["name"] %>
-    </p>
-  <% end %>
+  <div class="results">
+    <h1>Results</h1>
+      <%= render 'results' %>
+  </div>
 </div>
