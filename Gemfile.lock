@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/alexpeattie/heroku_secrets.git
+  revision: 717af8e0acf399bc88d2c8c1a7e230023942af0f
+  specs:
+    heroku_secrets (0.0.2)
+
+GIT
   remote: git://github.com/bmabey/database_cleaner.git
   revision: 8d7f72ffc99befd5ce67d333a99e0cf054c24f81
   specs:
@@ -190,6 +196,7 @@ DEPENDENCIES
   factory_girl_rails (= 4.2.0)
   faker (= 1.1.2)
   growl (= 1.0.3)
+  heroku_secrets!
   jbuilder (~> 2.0)
   jquery-rails
   minitest
