@@ -1,2 +1,10 @@
-<h1>Items#show</h1>
-<p>Find me in app/views/items/show.html.erb</p>
+<div class="container">
+  <h1>Results</h1>
+
+  <% @result["objects"].each do |item| %>
+    <p>
+      <%= item["name"] %> for $<%= item["price"] %> at
+      <%= item["venue"]["name"] %>
+    </p>
+  <% end %>
+</div>
