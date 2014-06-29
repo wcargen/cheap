@@ -68,6 +68,10 @@ code {
   text-align: center;
 }
 
+.results {
+  text-align: center;
+}
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -82,10 +86,9 @@ input {
 }
 
 .custom_form {
-  display: inline-block;
-  // max-width: 500px;
-  margin-left: 25px;
-  // margin-right: 25px;
+  display: block;
+  max-width: 300px;
+  margin:0 auto;
 }
 
 #error_explanation {
