@@ -1,8 +1,6 @@
 <div class="container">
   <div class="results">
     <h1 class-"welcome">Results</h1>
-      <% @result["objects"].each do |item| %>
-        <%= render :partial => 'results', :locals => {:item => item} %>
-      <% end %>
+      <%= render 'results' %>
   </div>
 </div>
