@@ -2,11 +2,7 @@
   <div class="results">
     <h1 class-"welcome">Results</h1>
       <% @result["objects"].each do |item| %>
-        <p>
-          <%= item["name"] %> for $<%= item["price"] %> at
-          <a href= "/info?venueid=<%= item["venue"]["id"] %>">
-          <%= item["venue"]["name"] %></a>
-        </p>
+        <%= render :partial => 'results', :locals => {:item => item} %>
       <% end %>
   </div>
 </div>

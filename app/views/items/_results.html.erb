@@ -1,7 +1,5 @@
-<% @result["objects"].each do |item| %>
-  <p>
-    <%= item["name"] %> for $<%= item["price"] %> at
-      <a href= "/info?venueid=<%= item["venue"]["id"] %>">
-        <%= item["venue"]["name"] %></a>
-  </p>
-<% end %>
+<p>
+  <%= item["name"] %> for $<%= item["price"] %> at
+  <a href= "/info?venueid=<%= item["venue"]["id"] %>">
+  <%= item["venue"]["name"] %></a>
+</p>
