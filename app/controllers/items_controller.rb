@@ -10,8 +10,8 @@ class ItemsController < ApplicationController
 
     request = Typhoeus::Request.new(
       "http://api.locu.com/v1_0/menu_item/search/?",
-      params: {name: @food, postal_code: @postal_code, price__lte: @price__lte,
-               api_key: Rails.application.secrets.locu_api_key}).run
+      params: { name: @food, postal_code: @postal_code, price__lte: @price__lte,
+               api_key: ENV['LOCU_API_KEY'] }).run
       @result = JSON.parse(request.body)
   end
 
@@ -20,7 +20,7 @@ class ItemsController < ApplicationController
 
     request = Typhoeus::Request.new(
       "http://api.locu.com/v1_0/venue/#{@venueid}/?",
-      params: {api_key: Rails.application.secrets.locu_api_key}).run
+      params: { api_key: ENV['LOCU_API_KEY'] }).run
       @info = JSON.parse(request.body)
   end
 
