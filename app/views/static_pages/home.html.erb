@@ -2,7 +2,8 @@
   <h1>Cheapsteak</h1>
   <h4>...keeping your stomach <strong><em>and</em></strong>
       your wallet full!</h4><br>
+  <%= link_to "Find something to eat!", items_path, class: "btn btn-large btn-primary" %><br><br>
   <% if !signed_in? %>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+    <%= link_to "Sign up now to save your favorites!", signup_path, class: "btn btn-warning btn-large" %>
   <% end %>
 </div>
