@@ -1,4 +1,6 @@
-<% @items.each do |item| %>
+<% @item.each do |item| %>
   <li><strong><%= item.name %></strong> -- $<%= item.price %> --
-    <%= item.venue %></li>
+    <%= item.venue %>
+    <%= link_to "delete", item, method: :delete %>
+  </li>
 <% end %>
