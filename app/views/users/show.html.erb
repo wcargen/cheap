@@ -1,3 +1,8 @@
 <% provide(:title, @user.name) %>
 
-<h1 class="profile"><%= @user.name %>'s Profile</h1>
+<div class="container">
+  <div class="results">
+    <h1 class-"welcome"><%= @user.name %>'s Favorites</h1>
+    <%= render 'favorites' %>
+  </div>
+</div>

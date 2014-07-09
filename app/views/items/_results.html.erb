@@ -3,5 +3,8 @@
     <%= item["name"] %> for $<%= item["price"] %> at
       <a href= "/info?venueid=<%= item["venue"]["id"] %>">
         <%= item["venue"]["name"] %></a>
+        <%= link_to '♥', {:controller => "items", :action => "create",
+             :name => item["name"], :price => item["price"],
+             :venue => item["venue"]["name"]}, :method=>:post %>
   </p>
 <% end %>

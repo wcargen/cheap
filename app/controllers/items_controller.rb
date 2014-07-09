@@ -24,9 +24,21 @@ class ItemsController < ApplicationController
       @info = JSON.parse(request.body)
   end
 
+  #Adds favorite item from search results to user's Favorites list
   def create
+    current_user.items.create(
+      name: params[:name],
+      price: params[:price],
+      venue: params[:venue])
+    redirect_to current_user
   end
 
   def destroy
   end
+
+  private
+
+    def item_params
+      params.require(:item).permit(:item_id, :user_id, :name, :price, :venue)
+    end
 end
