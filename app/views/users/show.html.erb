@@ -3,6 +3,8 @@
 <div class="container">
   <div class="results">
     <h1 class-"welcome"><%= @user.name %>'s Favorites</h1>
+    <%= link_to "Search for more!", items_path,
+                class: "btn btn-large btn-primary" %>
     <%= render 'favorites' %>
   </div>
 </div>

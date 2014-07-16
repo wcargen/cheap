@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_filter :correct_user
+
+  before_action :correct_user, only: [:edit, :update]
 
   def new
     @user = User.new
@@ -11,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)   #incomplete
+    @user = User.new(user_params)
     if @user.save
       sign_in @user
       flash[:success] = "Welcome to Cheapsteak!"
