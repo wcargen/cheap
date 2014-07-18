@@ -17,6 +17,6 @@
 //= require_tree .
 
 // Navbar dropdown menu override
-$(document).ready(function(){
-        $('.dropdown-toggle').dropdown();
-    });
+// $(document).ready(function(){
+//         $('.dropdown-toggle').dropdown();
+//     });
