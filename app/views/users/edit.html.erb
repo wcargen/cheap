@@ -1,0 +1,10 @@
+<% provide(:title, 'Settings') %>
+<div class="container">
+  <div class="custom_form">
+    <h1 class="welcome">Account Settings</h1>
+      <%= form_for(@user) do |f| %>
+        <%= render 'fields', f: f %>
+        <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+      <% end %>
+  </div>
+</div>
