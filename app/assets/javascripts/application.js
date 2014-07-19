@@ -19,8 +19,6 @@
 
 $(document).ready(function() {
 
-  console.log('Hello world')
-
 // choose text for the show/hide link - can contain HTML (e.g. an image)
 var showText='[?]';
 var hideText='[-]';
