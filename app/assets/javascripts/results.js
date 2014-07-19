@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  console.log(alert('hello world'));
+
 // choose text for the show/hide link - can contain HTML (e.g. an image)
 var showText='[?]';
 var hideText='[-]';
