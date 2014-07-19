@@ -6,5 +6,7 @@
         <%= link_to '♥', {:controller => "items", :action => "create",
              :name => item["name"], :price => item["price"],
              :venue => item["venue"]["name"]}, :method=>:post %>
+      <div class="toggle"><%= item["description"] %></div>
+    </ul>
   </p>
 <% end %>
