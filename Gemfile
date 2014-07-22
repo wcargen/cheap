@@ -11,7 +11,6 @@ gem 'bootstrap-will_paginate', '0.0.9'
 gem 'typhoeus'
 gem 'figaro'
 gem 'pundit'
-gem 'leaflet-rails'
 
 
 group :development, :test do
