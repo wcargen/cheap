@@ -26,11 +26,16 @@ class ItemsController < ApplicationController
 
   #Adds favorite item from search results to user's Favorites list
   def create
-    current_user.items.create(
-      name: params[:name],
-      price: params[:price],
-      venue: params[:venue])
-    redirect_to current_user
+    if signed_in?
+      current_user.items.create(
+        name: params[:name],
+        price: params[:price],
+        venue: params[:venue])
+      redirect_to current_user
+    else
+      redirect_to new_user_path, notice: "You need a registered account to save
+                                          your favorites."
+    end
   end
 
   def destroy
