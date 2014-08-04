@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+      window.App = {};
+      // App.api_key = "<%= @api_key %>";
+      App.food = "<%= @food %>";
+      App.postal_code = "<%= @postal_code %>";
+      App.price__lte = "<%= @price__lte %>";
+    </script>
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
