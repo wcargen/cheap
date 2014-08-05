@@ -1,8 +1,8 @@
 <% provide(:title, @user.name) %>
 
 <div class="container">
-  <div class="results">
-    <h1 class:"welcome"><%= @user.name %>'s Favorites</h1>
+  <div class="welcome">
+    <h1><%= @user.name %>'s Favorites</h1>
     <%= link_to "Search for more!", items_path,
                 class: "btn btn-large btn-primary" %><br><br>
     <%= render 'favorites' %>
