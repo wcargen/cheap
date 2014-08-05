@@ -75,8 +75,11 @@ code {
 }
 
 .results {
-  text-align: center;
+  display: block;
   font-size: 17px;
+  margin:0 auto;
+  max-width: 475px;
+  text-align: left;
 }
 
 .about {
