@@ -15,8 +15,6 @@ window.onload = function() {
     api_key: 'be5ae34d7365abed6bcd99407fd233259dc189f0',
   }
 
-  console.log(data)
-
   $.ajax({
       type: "GET",
       url: "https://api.locu.com/v1_0/menu_item/search/",
