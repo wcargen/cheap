@@ -19,7 +19,7 @@ window.onload = function() {
 
   $.ajax({
       type: "GET",
-      url: "http://api.locu.com/v1_0/menu_item/search/",
+      url: "https://api.locu.com/v1_0/menu_item/search/",
       data: data,
       dataType: 'jsonp',
       success: function (response) {
